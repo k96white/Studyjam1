@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css" />
+​
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit-icons.min.js"></script>
+​
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+​
+</head>
+<body>
+
+    <div class="uk-position-relative">
+        <!--<img src="billboard.jpg" alt="">-->
+        <div class="coverimg uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" width="100%" height="80vh" data-src="background.jpg" uk-img>
+            
+                
+                <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+                    <div><h1><strong>Introduction to UI-Kits</strong></h1> <br>
+                   <div class="subtitle">Understand end to end how to utilise U-Kits effectively <br> by making a small app with a UI Kit instead of native frameworks <br> <br><b>Date</b>: 2nd feb 2020</div>
+                    </div>
+                </div>
+
+        
+        </div>
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="nav-item1"><a href="#"><strong>Home</strong></a></li>
+                        <li class="nav-item1" ><a href="#speakers"><strong>Speakers</strong></a></li>
+                        <li class="nav-item1"><a href="#form">Form</a></li>
+                        <li class="nav-item1"><a href="#contact us"><strong>Contact Us</strong></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <br><br>
+
+    <table class="Schedule uk-table uk-table-small uk-table-divider" id="time">
+        <thead>
+            <tr>
+                <th>Timing</th>
+                <th>Activity</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:30a.m-11:30a.m</td>
+                <td>Mentor give an onboarding on how to utilise UI-Kits effectively</td>
+                
+            </tr>
+            <tr>
+                <td>11.30 a.m-1.30 p.m</td>
+                <td>The participents are divided into teams. <br> They are provided with the website description. <br> They are asked to use UI-Kits to build the website</td>
+                
+            </tr>
+            <tr>
+                <td>1:30 p.m-2:00 p.m</td>
+                <td>Lunch time</td>
+                
+            </tr>
+            <tr>
+                <td>2:00 p.m-4:00 </td>
+                <td>Continuation of the activity</td>
+                
+            </tr><tr>
+                <td>4:00 p.m-4:30 p.mp.m</td>
+                <td>Team Presentation of 5 mins each.Towardsthe end,the mentor will summerize and provide feedback</td>
+                
+            </tr>
+
+
+
+           
+        </tbody>
+    </table>
+
+    <!--Grid for Spk New-->
+    <h1 class="uk-heading-line uk-text-center" id="speakers"><span>Speakers</span></h1>
+    <div class="uk-child-width-expand@s uk-text-center uk-heading-divider" uk-grid>
+        <div class="uk-animation-toggle tabindex="0"">
+        <!-- Card 1 -->
+            <div class="uk-card uk-card-default uk-animation-fade ">
+                <div class="uk-card-media-top">
+                    <img src="sunder pichai.jpg" alt="ImageAlt1">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Top</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 1 -->
+        <!-- Card 2 -->
+        <div class="uk-animation-toggle tabindex="0">
+            <div class="uk-card uk-card-default uk-animation-fade">
+                <div class="uk-card-body ">
+                    <h3 class="uk-card-title">Media Bottom</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="sunder pichai.jpg" alt="ImageAlt1">
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <!-- Card 3 -->
+        <div class="uk-animation-toggle tabindex="0">
+            <div class="uk-card uk-card-default uk-animation-fade">
+                <div class="uk-card-media-bottom">
+                    <img src="sunder pichai.jpg" alt="ImageAlt1">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Top</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+        </div>
+    </div>
+    <!--Grid for Spk New-->
+    </div>
+    <br><br>
+    <hr>
+    <section class="fill-form" id="form">
+      <form class="uk-container uk-container-xsmall">
+        <fieldset class="uk-fieldset">
+    
+            <legend class="uk-legend uk-background-primary uk-light uk-padding uk-panel uk-text-center uk-text-bold" style="border-radius: 10px;">
+                Hey Folks! Please Fill Up the Form Below
+​
+            </legend>
+    
+            <div class="uk-margin uk-inline">
+                <a class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
+                <input class="uk-input uk-form-width-large" type="text" placeholder="Enter Your Name">
+            </div>
+​
+            <div class="uk-margin uk-inline">
+                <a class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
+                <input class="uk-input uk-form-success uk-form-width-large" type="email" placeholder="Enter Your Email-id">
+            </div>
+​
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium" type="number" placeholder="Enter Your Phone No">
+            </div>
+            Select Your Alloted Batch:
+            <div class="uk-margin">
+                <select class="uk-select uk-form-width-medium">
+                    <option>Batch 1 (Jan 2020)</option>
+                    <option>Batch 2(Feb 2020</option>
+                </select>
+            </div>
+    
+            <button class="uk-button uk-button-primary">Submit</button>
+​
+    
+        </fieldset>
+      </form>
+    </section>
+    <hr>
+    <br>
+    <br>
+​
+    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h2 class="uk-background-primary uk-light uk-padding uk-panel" style="border-radius: 10px;">Directions for the Venue</h2>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9039542282667!2d72.8901503145341!3d19.111868987067368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c80c85b365e3%3A0x5aaf0956452659da!2sRedbrick%20Coworking%20Spaces%20Powai!5e0!3m2!1sen!2sin!4v1580728289826!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h2 class="uk-background-primary uk-light uk-padding uk-panel" style="border-radius: 10px;">Address</h2>
+                <address>
+                    Redbrick Coworking Spaces Powai
+                    Tex Center, E Wing, Chandivali, Saki Village, Chandivali Farm Road, Mumbai, Maharashtra 400072
+                 
+                </address>
+                <figure>
+                    <img src="redbrick-office.jpg" alt="redbrick-office">
+                </figure>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="uk-flex uk-flex-center" id="contact us">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3>Contact Us</h3>
+            Redbrick Coworking Spaces Powai
+            Tex Center, E Wing, Chandivali, Saki Village, <br> Chandivali Farm Road, <br> Mumbai, Maharashtra 400072
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+            <h3>Helpline</h3><br>
+             Call: +91 999999999
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+            <h3>Social Media Icons</h3><br><br>
+            <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+            <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+            <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+​
+        </div>
+    </div>
+
+</div>
+<button class=" scroll uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" onclick="topFunction()" id="myBtn" title="Go to top">Scroll to the top</button>
+<script>
+    //When User Scrolls Down
+        function scrollFunction() {
+            if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    // When the user clicks on the button "Top", scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>  
+
+</body>
+    
+      
+</body>
+</html>
